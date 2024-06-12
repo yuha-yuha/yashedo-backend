@@ -9,6 +9,8 @@ services:
     depends_on:
       - db
       - test-db
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
     stdin_open: true
     tty: true
     ports:
